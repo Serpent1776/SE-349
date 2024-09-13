@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% if title %}
+<title>{{ title }} - Microphag</title>
+{% else %}
+<title>Welcome to Microphag</title>
+{% endif %}
+</head>
+<body>
+<div>Microphag: <a href="/index">Home</a></div>
+<hr>
+{% block content %}{% end block %}
+</body>
+</html>
